@@ -1,6 +1,6 @@
 <template>
 	<div>
-		recharge=>Home
+		activity=>Home
 
 	</div>
 </template>
@@ -10,4 +10,3 @@
 		name: "Home"
 	}
 </script>
-
