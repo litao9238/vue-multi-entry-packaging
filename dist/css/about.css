@@ -1,0 +1,767 @@
+body,
+html {
+	background: #FAFAFA;
+}
+
+/*banner*/
+.banner {
+	position: relative;
+	height: 600px;
+	background-image: url(https://topwealth.oss-cn-hangzhou.aliyuncs.com/about/images/banner.png);
+	background-position: center;
+	background-size: auto 100%;
+}
+
+.banner>img {
+	width: 100%;
+}
+
+.banner>p {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	font-size: 48px;
+	font-family: 'Noto Serif SC', serif;
+	color: #FFFFFF;
+	line-height: 1;
+	animation: moveTop 2s ease-out;
+}
+
+@keyframes moveTop {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate3d(0, 50%, 0);
+		transform: translate3d(0, 50%, 0)
+	}
+
+	to {
+		opacity: 1;
+		-webkit-transform: none;
+		transform: none;
+	}
+}
+
+
+/*公司介绍*/
+.vision {
+	background: #FFFFFF;
+	padding-bottom: 119px;
+}
+
+.publicTitle {
+	padding-top: 100px;
+	font-size: 36px;
+	color: #333333;
+	line-height: 1;
+	text-align: center;
+	font-family: 'Noto Serif SC', serif;
+	font-weight: normal;
+}
+
+.visionP {
+	font-size: 16px;
+	color: #666;
+	line-height: 1.5;
+	text-align: center;
+	font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+	font-weight: 300;
+	padding-top: 24px;
+	width: 87.5%;
+	max-width: 890px;
+	margin: 0 auto;
+}
+
+.regulatory {
+	background: #FFFFFF;
+	padding-bottom: 100px;
+}
+
+.reguleft {
+	width: 39.3%;
+	float: left;
+	height: 173px;
+	overflow: hidden;
+	position: relative;
+	text-align: right;
+}
+
+.regulatory .reguleft01>img {
+	width: auto;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.regulatory .publicTitle {
+	margin-bottom: 60px;
+	padding-top: 0px;
+}
+
+.regulatory .reguright01 {
+	width: 100%;
+	text-align: center;
+}
+
+.regulatory .reguright01 img {
+	width: 80%;
+	max-width: 240px;
+	margin-bottom: 20px;
+}
+
+.reguleft .reguleftMeng {
+	width: 100%;
+	height: 100%;
+	background: rgba(37, 64, 89, 0.96);
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 0;
+	right: 0;
+	display: none;
+	cursor: pointer;
+	/*transition: all 2s;
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-o-transition: all 2s;
+	opacity: 0;*/
+}
+
+.reguleft>img {
+	width: 100%;
+	display: block;
+
+}
+
+.reguleft>.p_xianshi {
+	display: block;
+	width: 100%;
+}
+
+.reguleft img.m_xianshi {
+	display: none;
+}
+
+.mengceng {
+	text-align: center;
+	width: 128px;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+}
+
+.mengceng>img {
+	width: 24px;
+	height: 24px;
+}
+
+.mengceng>p {
+	font-size: 16px;
+	color: #FFFFFF;
+	font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.p_xianshi {
+	display: block;
+}
+
+.m_xianshi {
+	display: none;
+}
+
+@media (min-width: 768px) {
+	.reguleft:hover .reguleftMeng {
+		display: block;
+	}
+}
+
+.reguright {
+	float: right;
+	margin-left: 5%;
+	width: 55.7%;
+}
+
+.reguright>h4 {
+	font-size: 36px;
+	color: #333333;
+	font-weight: 400;
+	font-family: 'Noto Serif SC', serif;
+	margin-bottom: 25px;
+	margin-top: 20px;
+}
+
+.reguright>p.reguright_p01 {
+	font-size: 16px;
+	color: #666666;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+	font-weight: 300;
+}
+
+.reguright>p.reguright_p02 {
+	font-size: 16px;
+	color: #666666;
+	line-height: 1.5;
+	font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+	font-weight: 300;
+}
+
+.reguright>p.reguright_p02 a {
+	font-size: 16px;
+	color: #666666;
+	font-family: 'Noto Sans SC',
+		sans-serif,
+		arial,
+		"微软雅黑";
+	text-decoration: underline;
+}
+
+.modelBox {
+	position: fixed;
+	background: rgba(0, 0, 0, 0.4);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	display: none;
+}
+
+.modelImg {
+	width: 90%;
+	max-width: 890px;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.modelImgBig {
+	width: 100%;
+
+	display: block;
+}
+
+.modelImgClose {
+	position: absolute;
+	top: -38px;
+	right: -43px;
+	width: 34px;
+	cursor: pointer;
+}
+
+
+/*团队介绍*/
+.team {
+	background: #fff;
+	padding-bottom: 120px;
+}
+
+.teamLeft {
+	float: left;
+	width: 27%;
+}
+
+.teamLeft>h4 {
+	font-size: 36px;
+	color: #333333;
+	font-weight: normal;
+	font-family: 'Noto Serif SC', serif;
+	margin-bottom: 25px;
+	margin-top: 20px;
+}
+
+.teamLeft>p {
+	font-size: 16px;
+	color: #666666;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+	font-weight: 300;
+}
+
+.teamRight {
+	float: right;
+	margin-left: 5%;
+	width: 67.9%;
+	overflow: hidden;
+}
+
+.teamRight img {
+	width: 100%;
+	transition: all 2s;
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	-o-transition: all 2s;
+}
+
+@media (min-width: 768px) {
+	.teamRight:hover img {
+		transform: scale(1.1);
+	}
+}
+
+.business {
+	background: #F5F5F5;
+	padding-top: 90px;
+	padding-bottom: 111px;
+}
+
+.business h3 {
+	font-size: 36px;
+	color: #333333;
+	line-height: 1.5;
+	text-align: center;
+	font-family: 'Noto Serif SC', serif;
+	font-weight: normal;
+}
+
+.businessBox {
+	padding-top: 100px;
+	display: block;
+}
+
+.businessMobile {
+	display: none;
+}
+
+.businessItem {
+	float: left;
+	width: 30%;
+	text-align: center;
+	margin-bottom: 90px;
+}
+
+.businessItem:nth-child(2),
+.businessItem:nth-child(5) {
+	margin: 0 5%;
+}
+
+.businessItem>img {
+	width: 90px;
+}
+
+.businessItem>h4 {
+	font-size: 24px;
+	color: #333333;
+	font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+	font-weight: 400;
+	line-height: 1.5;
+	margin-top: 50px;
+}
+
+.businessItem>p {
+	font-size: 16px;
+	color: #666666;
+	font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+	font-weight: 300;
+	line-height: 1.5;
+	margin-top: 10px;
+}
+
+.businessBtn {
+	display: block;
+	width: 180px;
+	height: 54px;
+	background: rgba(75, 106, 161, 1);
+	border: 1px solid rgba(75, 106, 161, 1);
+	font-size: 16px;
+	color: #EBEBEB;
+	line-height: 52px;
+	text-align: center;
+	font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+	font-weight: 400;
+	margin: 0 auto;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+
+.businessBtn:hover {
+	background: #315189;
+	color: #EBEBEB;
+}
+
+/*我们的理念*/
+.idea {
+	background-image: url(https://topwealth.oss-cn-hangzhou.aliyuncs.com/about/images/ideabg.png);
+	background-size: 100% 100%;
+	background-position: center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	height: 462px;
+	padding-top: 139px;
+}
+
+.idea .w1200 {
+	position: relative;
+	height: 100%;
+}
+
+.ideaBox {
+	display: block;
+	margin-top: -168px;
+	padding-bottom: 185px;
+}
+
+.idea h3 {
+	font-size: 36px;
+	color: #FFFFFF;
+	line-height: 1.5;
+	text-align: center;
+	font-weight: normal;
+	font-family: 'Noto Serif SC', serif;
+}
+
+.ideaItem {
+	width: 31.16%;
+	float: left;
+	height: 243px;
+	background: #fff;
+	text-align: center;
+	position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+}
+
+.ideaItem:nth-child(2) {
+	margin: 0 3.26%;
+}
+
+.ideaItemBox {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+
+@media (min-width: 768px) {
+	.ideaItem:hover {
+		box-shadow: 0px 16px 32px 3px rgba(220, 222, 227, 0.7);
+		margin-top: -5px;
+	}
+
+}
+
+.ideaItemBox h4 {
+	font-size: 24px;
+	color: #333333;
+	font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+	font-weight: 400;
+}
+
+.ideaItemBox p {
+	font-size: 16px;
+	color: #666666;
+	font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+	font-weight: 300;
+	margin-top: 15px;
+	line-height: 1.5;
+}
+
+h3.jianguan {
+	display: none;
+}
+
+.teamRight>p {
+	display: none;
+}
+
+@media (max-width: 1200px) {
+	.idea {
+		background-attachment: inherit;
+		background-size: 100% auto;
+	}
+}
+
+@media (max-width: 992px) {
+
+	.teamRight>p {
+		display: none;
+	}
+
+	.reguright>h4 {
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+
+	.teamLeft>h4 {
+		margin-top: 0;
+		margin-bottom: 5px;
+	}
+
+	.ideaBox {
+		margin-top: -115px;
+	}
+
+	.ideaItem {
+		height: 180px;
+	}
+}
+
+@media (max-width: 767px) {
+	.p_xianshi {
+		display: none;
+	}
+
+	.m_xianshi {
+		display: block;
+	}
+
+	.reguleft img.m_xianshi {
+		display: block;
+	}
+
+	.regulatory .publicTitle {
+		margin-bottom: 30px;
+	}
+
+	.banner {
+		height: 190px;
+		background-image: url(https://topwealth.oss-cn-hangzhou.aliyuncs.com/about/images/banner_tel.png);
+		background-size: 100% auto;
+	}
+
+	.banner>p {
+		font-size: 16px;
+	}
+
+	.vision {
+		padding-bottom: 50px;
+	}
+
+	.publicTitle {
+		font-size: 18px;
+		padding-top: 40px;
+	}
+
+	.visionP {
+		font-size: 12px;
+		width: 100%;
+		text-align: left;
+		padding-top: 10px;
+	}
+
+	/*监管牌照*/
+	.regulatory {
+		padding-bottom: 50px;
+	}
+
+	h3.jianguan {
+		display: block;
+		font-size: 18px;
+		color: #333333;
+		font-family: 'Noto Serif SC', serif;
+		font-weight: normal;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.reguleft {
+		width: 100%;
+		float: none;
+		height: auto;
+	}
+
+	.reguright {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+		padding-top: 20px;
+	}
+
+	.reguleft>img.p_xianshi {
+		display: none;
+	}
+
+	.reguright>h4 {
+		display: none;
+	}
+
+	.reguright>p.reguright_p01 {
+		font-size: 14px;
+		color: #333333;
+		font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+		font-weight: 300;
+	}
+
+	.reguright>p.reguright_p02 {
+		font-size: 12px;
+		color: #666666;
+		font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+		font-weight: 300;
+	}
+
+	.reguright>p.reguright_p02 a {
+		font-size: 12px;
+		color: #666666;
+	}
+
+	.team {
+		padding-bottom: 50px;
+	}
+
+	.teamLeft {
+		width: 100%;
+		display: none;
+	}
+
+	.teamRight {
+		width: 100%;
+		margin-left: 0;
+	}
+
+	.teamRight>p {
+		font-size: 14px;
+		color: #333333;
+		font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+		font-weight: 300;
+		margin-top: 20px;
+		display: block;
+	}
+
+	/*业务体系*/
+	.business {
+		padding-top: 40px;
+		padding-bottom: 50px;
+	}
+
+	.business h3 {
+		font-size: 18px;
+	}
+
+	.businessBox {
+		display: none;
+	}
+
+	.businessMobile {
+		display: block;
+		margin-bottom: 40px;
+	}
+
+	.businessMobile>.item01 {
+		border-bottom: 1px dashed rgba(210, 210, 210, 1);
+		padding: 26px 0 18px;
+	}
+
+	.businessMobile>.item01>img {
+		width: 45px;
+		float: left;
+		margin-right: 20px;
+	}
+
+	.itemBox {
+		float: left;
+		width: calc(100% - 65px);
+	}
+
+	.itemBox h4 {
+		font-size: 14px;
+		color: #333333;
+		font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+		font-weight: 400;
+	}
+
+	.itemBox p {
+		font-size: 12px;
+		color: #666666;
+		line-height: 1.5;
+		margin-top: 5px;
+		font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+		font-weight: 300;
+	}
+
+	.businessBtn {
+		width: 100%;
+		height: 40px;
+		line-height: 40px;
+		font-size: 14px;
+	}
+
+	.regulatory .reguleft01 {
+		width: 100%;
+	}
+
+	.regulatory .reguright01 {
+		width: 100%;
+	}
+
+	.regulatory .reguleft01>img {
+		width: 80%;
+		max-width: 240px;
+		transform: none;
+		margin: 0 auto;
+		position: static;
+	}
+
+
+	/*我们的理念*/
+	.idea {
+		background-attachment: inherit;
+		padding-top: 60px;
+		height: 170px;
+	}
+
+	.ideaBox {
+		margin-top: -56px;
+		padding-bottom: 70px;
+	}
+
+	.idea h3 {
+		font-size: 18px;
+		font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+		font-weight: 500;
+	}
+
+	.ideaItem {
+		width: 100%;
+		margin-bottom: 20px;
+		box-shadow: 0px 16px 32px 3px rgba(220, 222, 227, 0.55);
+		height: auto;
+	}
+
+	.ideaItem:nth-child(2) {
+		margin: 0 0 20px;
+	}
+
+	.ideaItemBox {
+		position: inherit;
+		transform: none;
+		padding: 20px 15px 40px;
+	}
+
+	.ideaItemBox h4 {
+		font-size: 14px;
+		text-align: left;
+		font-weight: 400;
+	}
+
+	.ideaItemBox p {
+		font-size: 12px;
+		color: #666666;
+		font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+		font-weight: 300;
+		text-align: left;
+		margin-top: 5px;
+	}
+
+	.modelImgClose {
+		width: 20px;
+		height: 20px;
+		top: -26px;
+		right: 0;
+	}
+}

@@ -1,0 +1,634 @@
+body,
+html {
+  background: #fafafa;
+}
+
+/*banner*/
+.banner {
+  position: relative;
+  max-height: 860px;
+  display: block;
+  /* background-image: url(https://topwealth.oss-cn-hangzhou.aliyuncs.com/index/images/banner.png); */
+  /* background-position: center; */
+  /* background-size: auto 100%; */
+}
+
+.bannerTel {
+  display: none;
+}
+
+/* .banner>img{
+	width: 100%;
+} */
+/* .banner>p{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 50%;
+	font-size: 48px;
+	font-family: 'Noto Serif SC', serif;
+	color: #FFFFFF;
+	line-height: 1;
+	animation: moveTop 2s ease-out;
+	font-weight: normal;
+} */
+
+
+.banner .swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  direction: ltr;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 1
+}
+
+.banner .swiper-wrapper {
+  position: relative;
+  width: 100%;
+  -webkit-transition-property: -webkit-transform, left, top;
+  -webkit-transition-duration: 0s;
+  -webkit-transform: translateZ(0);
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: -moz-transform, left, top;
+  -moz-transition-duration: 0s;
+  -moz-transform: translateZ(0);
+  -moz-transition-timing-function: ease;
+  -o-transition-property: -o-transform, left, top;
+  -o-transition-duration: 0s;
+  -o-transform: translateZ(0);
+  -o-transition-timing-function: ease;
+  -o-transform: translate(0);
+  -ms-transition-property: -ms-transform, left, top;
+  -ms-transition-duration: 0s;
+  -ms-transform: translateZ(0);
+  -ms-transition-timing-function: ease;
+  transition-property: transform, left, top;
+  transition-duration: 0s;
+  transform: translateZ(0);
+  transition-timing-function: ease;
+  box-sizing: content-box
+}
+
+.banner .swiper-free-mode>.swiper-wrapper {
+  transition-timing-function: ease-out;
+  margin: 0 auto
+}
+
+.banner .swiper-slide {
+  float: left;
+  box-sizing: content-box
+}
+
+.banner .swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+}
+
+.banner .swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+}
+
+.banner .header-tip {
+  position: absolute;
+  z-index: 20;
+  width: 100%;
+  height: 100px;
+  top: 50%;
+  margin-top: -50px;
+  left: 0
+}
+
+.banner .header-tip p {
+  text-align: center;
+  font-size: 46.95px;
+  color: #fff;
+  letter-spacing: 6px;
+  font-family: 'Noto Serif SC', serif;
+  font-size: 48px;
+  line-height: 1;
+  animation: moveTop 2s ease-out;
+  font-weight: normal;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 860px;
+}
+
+
+@keyframes moveTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 50%, 0)
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+/*公司愿景*/
+.vision {
+  background: #FFFFFF;
+  padding-bottom: 94px;
+}
+
+.publicTitle {
+  padding-top: 100px;
+  font-size: 36px;
+  color: #333333;
+  line-height: 1;
+  text-align: center;
+  font-family: 'Noto Serif SC', serif;
+  font-weight: normal;
+}
+
+.visionP {
+  font-size: 24px;
+  color: #666;
+  line-height: 1.5;
+  text-align: center;
+  font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+  font-weight: 300;
+  padding-top: 24px;
+}
+
+
+/*业务体系*/
+.System {
+  background: #F5F5F5;
+  padding-bottom: 100px;
+}
+
+.systemBox {
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.systemItem {
+  float: left;
+  width: 19.25%;
+  border-right: 1px solid #D2D2D2;
+  text-align: center;
+  padding: 24px 0 60px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  height: 414px;
+  padding: 0 20px;
+}
+
+.systemItem.active {
+  width: 42.25%;
+}
+
+.systemItem:nth-child(6) {
+  border-right: 0;
+}
+
+.systemItem>.itemImg {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  opacity: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.systemItem>.itemImg>img {
+  width: 100%;
+}
+
+.systemItem>.itemImg>img.itemPc {
+  display: block;
+}
+
+.systemItem>.itemImg>img.itemMobile {
+  display: none;
+}
+
+.systemItem.active>.itemImg {
+  opacity: 1;
+}
+
+.systemItem>h4 {
+  font-size: 24px;
+  color: #333333;
+  line-height: 1.5;
+  margin-top: 47px;
+  font-family: 'Noto Serif SC', serif;
+  font-weight: normal;
+}
+
+.systemItem>p {
+  font-size: 16px;
+  color: #666666;
+  margin-top: 10px;
+  line-height: 1.5;
+  opacity: 0;
+  font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+  font-weight: 300;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.systemItem.active>p {
+  opacity: 1;
+}
+
+.SystemBtn {
+  width: 180px;
+  height: 54px;
+  margin: 0 auto;
+}
+
+.SystemBtn>a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #4B6AA1;
+  border: 1px solid #4B6AA1;
+  font-size: 16px;
+  color: #EBEBEB;
+  text-align: center;
+  line-height: 52px;
+  font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+  font-weight: 400;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.SystemBtn>a:hover {
+  background: #315189;
+}
+
+
+/*核心优势*/
+.core {
+  background-color: #F5F5F5;
+  background-image: url(https://topwealth.oss-cn-hangzhou.aliyuncs.com/index/images/corebg.png);
+  background-attachment: fixed;
+  background-position: center;
+  height: 424px;
+}
+
+.core .publicTitle {
+  padding-top: 140px;
+  padding-bottom: 5px;
+}
+
+.coreTitle {
+  padding-top: 129px;
+  font-size: 36px;
+  color: #FFFFFF;
+  font-family: 'Noto Serif SC', serif;
+  font-weight: normal;
+  text-align: center;
+}
+
+.coreContent {
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+
+.coreBox {
+  width: 100%;
+}
+
+.coreBox>.coreItem {
+  width: 31.17%;
+  float: left;
+  height: 286px;
+  background: #fff;
+  text-align: center;
+  padding: 80px 50px 10px;
+  box-shadow: 0px 3px 25px 2px rgba(220, 222, 227, 0.3);
+  margin-top: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.coreBox>.coreItem:nth-child(2) {
+  margin: 0 2.45%;
+}
+
+.coreBox>.coreItem:hover:nth-child(2) {
+  margin-top: -5px;
+}
+
+@media (min-width: 768px) {
+  .coreBox>.coreItem:hover {
+    box-shadow: 0px 16px 32px 3px rgba(220, 222, 227, 0.7);
+    margin-top: -5px;
+  }
+}
+
+.coreBox>.coreItem>h5 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 19px;
+  font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+  font-weight: 400;
+}
+
+.coreBox>.coreItem>p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.5;
+  font-family: 'Noto Sans SC', sans-serif, arial, "微软雅黑";
+  font-weight: 300;
+}
+
+
+/*合作伙伴*/
+.partner {
+  background: #fafafa;
+  padding-bottom: 180px;
+}
+
+.partnerBox {
+  margin-top: 76px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.partner .publicTitle {
+  padding-top: 160px;
+}
+
+.partnerItem {
+  width: 240px;
+  height: 120px;
+  display: block;
+}
+
+.partnerMobile {
+  display: none;
+}
+
+.partnerItem>img {
+  width: 100%;
+  height: 100%;
+}
+
+.partnerItem>img.partActive {
+  display: none;
+}
+
+.partnerItem:hover .default {
+  display: none;
+}
+
+.partnerItem:hover .partActive {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .coreBox>.coreItem {
+    padding-top: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner {
+    height: 250px;
+    display: none;
+    /* background-image:url(https://topwealth.oss-cn-hangzhou.aliyuncs.com/index/images/banner_mobile.png); */
+    /* background-size: 100% auto; */
+  }
+
+  .banner img {
+    height: 100%;
+    width: auto;
+  }
+
+  .banner .header-tip p {
+    font-size: 16px;
+  }
+
+  .banner .header-tip {
+    transform: translateY(-50%);
+    margin-top: 0;
+    height: auto;
+  }
+
+  .bannerTel {
+    display: block;
+  }
+
+  .bannerTel .header-tip {
+    position: absolute;
+    top: 50%;
+    /* margin-top: -0.21rem; */
+    text-align: center;
+    color: #fff;
+    z-index: 20;
+    width: 100%;
+    line-height: 24px;
+  }
+
+  .bannerTel .header-tip p {
+    font-size: 16px;
+  }
+
+  .bannerTel .swiper-slide img {
+    width: 100%;
+  }
+
+
+
+  .vision {
+    padding-bottom: 40px;
+  }
+
+  .publicTitle {
+    padding-top: 40px;
+    font-size: 18px;
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 500;
+  }
+
+  .visionP {
+    font-size: 12px;
+    color: #666666;
+    padding-top: 10px;
+  }
+
+  .systemBox {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .systemItem {
+    float: none;
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px dashed #D2D2D2;
+    padding: 20px 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    height: auto;
+  }
+
+  /*.systemItem.active{
+		height: auto;
+	}*/
+  .systemItem>.itemImg {
+    display: none;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
+  .systemItem>.itemImg>img.itemPc {
+    display: none;
+  }
+
+  .systemItem>.itemImg>img.itemMobile {
+    display: block;
+  }
+
+  .systemItem.active>.itemImg {
+    display: block;
+    margin: 0 auto 20px;
+  }
+
+  .systemItem>h4 {
+    margin-top: 0;
+    font-size: 14px;
+    color: #333333;
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 500;
+  }
+
+  .systemItem>p {
+    display: none;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+  }
+
+  .systemItem.active>p {
+    display: block;
+    font-weight: 300;
+    font-size: 12px;
+  }
+
+  .systemItem.active {
+    width: 100%;
+  }
+
+  .SystemBtn {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .SystemBtn>a {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+  }
+
+  /*核心优势*/
+  .core {
+    background-image: url(https://topwealth.oss-cn-hangzhou.aliyuncs.com/index/images/corebg_tel.png);
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 170px;
+    background-attachment: inherit;
+  }
+
+  .coreTitle {
+    font-size: 18px;
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 500;
+    padding-top: 60px;
+  }
+
+  .coreBox {
+    padding-top: 40px;
+  }
+
+  .coreBox>.coreItem:nth-child(2) {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .coreBox>.coreItem {
+    float: none;
+    width: 100%;
+    padding: 20px 15px;
+    height: auto;
+    margin-bottom: 20px;
+    box-shadow: 0px 16px 32px 3px rgba(220, 222, 227, 0.55);
+  }
+
+  .coreBox>.coreItem>h5 {
+    text-align: left;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .coreBox>.coreItem>p {
+    font-size: 12px;
+    text-align: left;
+  }
+
+  .partner {
+    display: none;
+  }
+
+  .partner .publicTitle {
+    padding-top: 60px;
+    font-size: 18px;
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 500;
+  }
+
+  .partnerItem>img {
+    width: 100%;
+    height: auto;
+  }
+
+  .partnerItem {
+    width: 39.3%;
+    height: auto;
+    margin-bottom: 46px;
+  }
+
+  .partnerItem>img.default {
+    display: none;
+  }
+
+  .partnerItem>img.partActive {
+    display: block;
+  }
+
+  .partnerMobile {
+    display: block;
+  }
+}

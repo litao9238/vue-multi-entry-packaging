@@ -1,0 +1,216 @@
+/* 清除浮动 */
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ".";
+  }
+  /* 兼容IE */
+  .clearfix {
+    *zoom: 1;
+  }
+.sec1-bg {
+    background: url(https://topwealth.oss-cn-hangzhou.aliyuncs.com/contact/images/banner-contact.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+#section1 {
+    height: 600px;
+    padding-top: 288px;
+}
+
+.sec1-title {
+    font-size: 60px;
+    font-family: 'Noto Serif SC', serif;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    line-height: 24px;
+    text-align: center;
+    animation: moveTop 2s ease-out;
+}
+
+#section2 {
+    padding: 200px 0;
+}
+
+.sec2-l {
+    width: 42.1%;
+    height: auto;
+    margin-right: 5%;
+    float: left;
+    overflow: hidden;
+  }
+  
+  .sec2-l img {
+    width: 100%;
+    height: auto;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -o-transition: all 2s;
+  }
+  
+  .sec2-l:hover img {
+    transform: scale(1.1);
+  }
+
+.sec2-r {
+    width: 52.9%;
+    display: inline-block;
+}
+
+.sec2-r .addp{
+    padding-top: 30px;
+    font-size: 24px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+}
+
+.r-title1 {
+    font-size: 36px;
+    font-weight: 400;
+    font-family: 'Noto Serif SC', serif;
+    color: rgba(51, 51, 51, 1);
+    padding: 39px 0 53px;
+}
+
+.r-item {
+    width: 50%;
+    float: left;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.r-item:nth-child(1) {
+    /* border-right: 1px solid rgba(210, 210, 210, 1); */
+}
+
+.r-item:nth-child(2) {
+    padding-left: 50px;
+}
+
+.ritem-img1 {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 30px;
+}
+
+.ritem-info {
+    margin-bottom: 18px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+}
+.ritem-info span{
+    font-weight: 400;
+}
+
+.ritem-info1 {
+    font-size: 16px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 400;
+    color: rgba(51, 51, 51, 1);
+    line-height: 24px;
+}
+
+.yli_mshow{
+    display: none;
+}
+
+@media (max-width: 1199px) {
+    .w1200 {
+        width: 970px;
+    }
+    .r-title1 {
+        padding: 48px 0 50px;
+    }
+}
+
+@media (max-width: 991px) {
+    .w1200 {
+        width: 750px;
+    }
+    .r-title1 {
+        padding: 5px 0 15px;
+    }
+    .ritem-img1 {
+        margin-bottom: 20px;
+    }
+    .r-item:nth-child(2) {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .w1200 {
+        width: 96%;
+    }
+    .yli_mshow{
+        display: block;
+    }
+    .yli_mhide{
+        display: none;
+    }
+    #section1 {
+        height: 190px;
+		padding-top: 87px;
+    }
+    .sec1-bg {
+        background: url(https://topwealth.oss-cn-hangzhou.aliyuncs.com/contact/images/banner-M-%E8%81%94%E7%B3%BB.png) 0 0 no-repeat;
+        background-size: cover;
+    }
+    .sec1-title {
+        font-size: 18px;
+        line-height: 12px;
+    }
+    #section2 {
+        padding: 12px 0 60px;
+        background: #fff;
+    }
+    .sec2-r {
+        width: 100%;
+    }
+    .r-item:nth-child(1) {
+        /* border-right: 0; */
+        /* border-bottom: 1px solid #D2D2D2; */
+    }
+    .r-item {
+        width: 100%;
+        float: none;
+        display: block;
+        padding: 30px 0;
+    }
+    .ritem-img1 {
+        width: 39px;
+        height: 39px;
+        display: block;
+        margin: 0 auto 20px;
+    }
+    .ritem-info {
+        margin-bottom: 24px;
+        padding-left: 60px;
+        color: #333;
+        font-size: 14px;
+        font-family: 'Noto Sans SC', sans-serif;   
+        font-weight: 300;
+    }
+    .ritem-info span{
+        font-family: 'Noto Sans SC', sans-serif;  
+        font-weight: 400;
+    }
+    .r-item:nth-child(2) {
+        padding: 30px 14px 0px 20px;
+    }
+    .ritem-info1 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .sec2-r .addp{
+        text-align: center;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,282 @@
+/* reset */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+
+  appearance: none;
+  /* 所有主流浏览器都不支持 appearance 属性 */
+
+  -moz-appearance: none;
+  /* Firefox 支持替代的 -moz-appearance 属性 */
+
+  -webkit-appearance: none;
+  /* Safari 和 Chrome 支持替代的 -webkit-appearance 属性 */
+
+}
+
+input[type="text"],
+input[type="password"] {
+
+  -webkit-border-radius: 0px;
+  /* 去掉 input[type="text"] 等等默认 border-radius 圆角 */
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+textarea {
+
+  -webkit-appearance: none;
+
+}
+
+input::-webkit-input-placeholder {
+  /* WebKit browsers */
+  line-height: 1.5em;
+}
+
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption,
+th {
+  text-align: center;
+  font-weight: normal;
+}
+
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+
+[hidefocus],
+summary {
+  outline: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+  font-size: 100%;
+}
+
+sup,
+sub {
+  font-size: 83%;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: inherit;
+}
+
+q:before,
+q:after {
+  content: none;
+}
+
+textarea {
+  overflow: auto;
+  resize: none;
+}
+
+label,
+summary {
+  cursor: default;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+  font-weight: bold;
+}
+
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+  text-decoration: none;
+}
+
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+  font: 12px/1.14 arial, \5b8b\4f53;
+  font-family: 'Noto Sans SC', sans-serif;
+  ,
+  arial,
+  "微软雅黑";
+  font-weight: 400;
+  color: #333;
+  outline: 0;
+  -webkit-appearance: none;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body,
+html {
+  font-family: 'Noto Sans SC', sans-serif;
+  ,
+  arial,
+  "微软雅黑";
+  font-weight: 400;
+}
+
+a,
+a:hover {
+  color: #333;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -moz-user-focus: none;
+  -moz-user-select: none;
+}
+
+.f-l {
+  float: left;
+}
+
+.f-r {
+  float: right;
+}
+
+.clear {
+  clear: both;
+  float: none !important;
+  height: 0 !important;
+  border: none !important;
+  width: 0 !important;
+}
+
+.w1200 {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .w1200 {
+    width: 94%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .w1200 {
+    width: 87.5%;
+    margin: 0 auto;
+  }
+}
